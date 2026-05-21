@@ -1,0 +1,50 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    gap: 5px;
+    background: black;
+    border-radius: 5px;
+}
+
+
+/*home page*/
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    background-color: blue;
+}
+
+@media (min-width: 768px) {
+
+    .cards {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .burger-menu span {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+}
