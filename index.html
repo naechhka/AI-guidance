@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI guidance</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
+
+
 <body>
 
     <div class="container">
         <header>
-            <button class="burger-menu">
+
+            <button class="burger-menu" id="burger-menu">
                 <span></span>
                 <span></span>
             </button>
+
+            <a href="#" class="logo"><!-- LOGO img goes here --></a>
+
+            <nav class="nav" id="nav">
+                <a href="#">About us</a><!-- add link to about us page -->
+
+                <div class="dropdown">
+                    <button class="dropdown-button">Learning</button>
+                    <div class="dropdown-content">
+                        <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a>
+                    </div>
+                </div>
+
+            </nav>
         </header>
-        <section class="cards">
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
+
+        <section class="row one-column">
+            <div class="intro-img">
+                <img src="imgs/intro-img.svg">
+            </div>
         </section>
-    </div>
-    
+
+        <section class="row two-columns">
+            <div calss="card">card2</div>
+            <div calss="card">card2</div>
+        </section>
+
+    </div> 
 </body>
 </html>
