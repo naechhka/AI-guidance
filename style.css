@@ -1,7 +1,6 @@
-body {margin: 0;}
+/* body {margin: 0;} */
 
-
-
+/* 
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,11 +34,21 @@ body {margin: 0;}
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    border-radius: 5px;
+    border-radius: 5px; */
     /* z-index: 1; */
-}
+/* }
 
 .dropdown:hover .dropdown-content {display: flex; flex-direction: column;}
+
+.intro-img img{
+        display: none;
+    }
+
+    .intro-img {
+        width: 100%;
+        padding: 0 3%;
+        box-sizing: border-box;
+    } */
 
 /*home page*/
 /* .cards {
@@ -47,12 +56,22 @@ body {margin: 0;}
     grid-template-columns: 1fr;
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
-    
+    .intro-img img{
+        display: block;
+        width: 100%;
+    }
+
+    .intro-img {
+        width: 100%;
+        padding: 0 3%;
+        box-sizing: border-box;
+    }
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
 
     .row {
         display: grid;
@@ -66,12 +85,6 @@ body {margin: 0;}
         justify-content: center;
     }   
 
-    .intro-img img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        object-fit: cover;
-    }
 
     .two-columns {
         grid-template-columns: 1fr 1fr;
@@ -87,6 +100,20 @@ body {margin: 0;}
         gap: 20px;
         align-items: center;
         justify-self: center;
+    }
+    .intro-img img{
+        /* display: block; */
+        /* justify-content: center;
+        max-width: 100%;
+        height:auto; */
+        /* width: 100%;
+        display: block;
+    }
+
+    .intro-img {
+        width: 100%;
+        padding: 0 3%;
+        box-sizing: border-box;
     }
 
     .header {
@@ -119,5 +146,155 @@ body {margin: 0;}
         text-align: none;
         display: block;
     }
+} */
+
+html, body{
+    background-color: #F7F4EF;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1%;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    gap: 5px;
+    background: black;
+    border-radius: 5px;
+}
+
+.nav {display: none;}
+.nav.active {display: inline;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 5px; 
+    /* z-index: 1; */
+}
+
+.dropdown:hover .dropdown-content {display: flex; flex-direction: column;}
+
+.intro-img img {
+    display: none;
+}
+
+.row {
+    display: grid;
+        /* gap: 20px; */
+}
+
+.two-columns {
+    grid-template-columns: 1fr;
+    padding: 4% 5%;
+}
+
+.one-column {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+.start-learning {
+    background-color: #EBAF38;
+    border-radius: 25px;
+    width: 200px;
+    height: 30px;
+    border: 0;
+}
+
+.card-heading {font-family: Inter;}
+
+.paragraph-section {font-family: Inter;}
+
+@media (min-width: 480px) {
+
+    .intro-img img {
+        width: 100%;
+        display: block;
+    }
+
+    .intro-img {
+        width: 100%;
+        padding: 1% 3%;
+        box-sizing: border-box;
+    }    
+
+}
+
+@media (min-width: 900px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    .dropdown-button {
+        background-color: transparent;
+        color:black;
+        font-size: 16px;
+        padding: 16px;
+        border: none;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    justify-self: center;
+    }
+
+    .nav a{
+        text-decoration: none;
+    }
+
+    .intro-img img{
+        width: 100%;
+        display: block;
+}
+
+    .intro-img {
+        width: 100%;
+        padding: 1% 3%;
+        box-sizing: border-box;
+    } 
+
+    .card-heading {
+        font-size: 64px;
+        font-weight: 600;
+        margin: 5% 0 0 0;
+    }
+
+    .paragraph-section {
+        font-size: 24px;;
+        font-weight: 300;
+    }
+/* 
+    .ai-examples-section {
+        display: flex;
+        justify-content: center;
+    } */
+    .ai-examples-section img{
+        width: 15%;
+        height: 15%;
+        padding: 30% 0 0 90px;
+        /* justify-content: center; */
+    }
+
 }
     
