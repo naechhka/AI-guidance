@@ -1,4 +1,7 @@
 /* body {margin: 0;} */
+*{
+    box-sizing: border-box;
+}
 
 /* 
 .container {
@@ -192,12 +195,12 @@ html, body{
 
 .row {
     display: grid;
-        /* gap: 20px; */
+    /* gap: 10px; */
 }
 
 .two-columns {
     grid-template-columns: 1fr;
-    padding: 4% 5%;
+    padding: 3% 5% 0 5%;
 }
 
 .one-column {
@@ -212,11 +215,49 @@ html, body{
     width: 200px;
     height: 30px;
     border: 0;
+    font-family: Nunito;
+    font-weight: 800;
 }
 
-.card-heading {font-family: Inter;}
+.ai-example {font-family: Nunito;}
 
 .paragraph-section {font-family: Inter;}
+
+.card-heading {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 5% 0 0 0;
+    font-family: Inter;
+}
+
+.card-heading-right {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 5% 0 0 0;
+    font-family: Inter;
+    text-align: right;
+}
+
+
+    .ai-examples-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+     }
+
+   .ai-example {
+    text-align: center;
+    width: 65px;
+    font-size: 12px;
+   }
+
+   .ai-example img {
+        width: 100%;
+        display: block;
+   }
+
 
 @media (min-width: 480px) {
 
@@ -231,6 +272,24 @@ html, body{
         box-sizing: border-box;
     }    
 
+     two-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ai-examples-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        /* flex-direction: column; */
+    }
+
+    .ai-example {
+        text-align: center;
+        width: 70px;
+        font-size: 16px;
+   }
 }
 
 @media (min-width: 900px) {
@@ -275,26 +334,57 @@ html, body{
     } 
 
     .card-heading {
-        font-size: 64px;
+        font-size: 56px;
         font-weight: 600;
         margin: 5% 0 0 0;
     }
 
-    .paragraph-section {
-        font-size: 24px;;
-        font-weight: 300;
+    .card-heading-right {
+        font-size: 56px;
+        font-weight: 600;
+        margin: 5% 0 0 0;
+        text-align: right;
     }
+
+    .paragraph-section {
+        font-size: 20px;;
+        font-weight: 300;
+        margin: 0;
+    }
+
+ 
 /* 
     .ai-examples-section {
         display: flex;
         justify-content: center;
     } */
-    .ai-examples-section img{
-        width: 15%;
-        height: 15%;
-        padding: 30% 0 0 90px;
-        /* justify-content: center; */
-    }
+    .ai-examples-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        /* flex-direction: column; */
+     }
 
+        /* .ai-examples-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-items: center;
+     } */
+
+   .ai-example {
+    text-align: center;
+    width: 85px;
+    font-size:16px;
+    font-weight: 400;
+    /* padding-top: 60px; */
+   }
+
+   .ai-example img {
+        width: 100%;
+        display: block;
+   }
 }
     
