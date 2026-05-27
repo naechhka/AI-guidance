@@ -26,18 +26,18 @@
             <a href="#" class="logo"><!-- LOGO img goes here --></a>
 
             <nav class="nav" id="nav">
-                <a href="#">About us</a><!-- add link to about us page -->
+                <a class="about-us-link" href="aboutus.html">ABOUT US</a><!-- add link to about us page -->
 
                 <div class="dropdown">
-                    <button class="dropdown-button">Learning</button>
+                    <a class="dropdown-button" style="font-family: Inter;">LEARNING</a>
                     <div class="dropdown-content">
-                        <a href="#">link 1</a>
-                        <a href="#">link 2</a>
-                        <a href="#">link 3</a>
+                        <a href="#">How can you gather information?</a>
+                        <a href="#">What can you do with AI?</a>
+                        <a href="#">Ethics & Reporting</a>
                     </div>
                 </div>
-
             </nav>
+            <!-- <hr> -->
         </header>
 
         <div class="intro-img">
@@ -85,11 +85,67 @@
         <section class="row two-columns">
             <div class="what-you-can-do-with-ai-section">
                 <p class="card-heading">What can you do with <span style="color: #6E47E3;">AI</span>?</p>
+                <ul class="list">
+                    <li>Analyse themes and patterns from community conversations or survey responses</li>
+                    <li>example</li>
+                    <li>example</li>
+                </ul>
             </div>
             <div class="what-ai-cannot-do-section">
-                <p class="card-heading-right">What AI cannot do?</p>
+                <p class="card-heading-right">What can't you do with <span style="color:#6E47E3">AI</span>?</p><br>
+                <p class="paragraph-section-right">There are also things AI is not able to do:</p><br>
+                <ul class="list-right">
+                    <li>Understand people the way you do — it works with words, not lived experience</li>
+                    <li>example</li>
+                    <li>example</li>
+                </ul>
             </div>
         </section>
+
+        <section class="row two-columns">
+            <div class="can-ai-make-mistakes-left">
+                <p class="card-heading">Can <span style="color: #6E47E3;">AI</span> make mistakes?</p><br>
+                <p class="paragraph-section"><span style="font-weight: bold;">Yes</span> — and this is one of the most important things to understand before you start.</p><br>
+                <p class="paragraph-section">AI tools can produce incorrect information, miss important nuances, or reflect biases from the data they were trained on. They can sound very confident even when they are wrong. This is sometimes called 'hallucination' — the AI generates something that sounds plausible but is not accurate.</p><br>
+                <p class="paragraph-section">The example shows how AI can oversimplify a nuanced community response:</p>
+            </div>
+            <div class="can-ai-make-mistakes-right">
+                <div class="mistake-examples-section">
+                <div class="mistake-examples mistake-example1">“The new park is beautiful, but wheelchair access is still very limited.”</div>
+                <p>Human response</p>
+                </div>
+                <div>
+                <div class="mistake-examples mistake-example2">“Residents are happy with the new park.”</div>
+                <p>AI response</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row two-columns">
+            <div class="is-my-data-private-left">
+                <p class="paragraph-section">As a general rule:<br><br>
+                    Do not upload documents containing personal or sensitive information unless you have checked the tool's privacy policy. 
+
+                    Do not paste in names, addresses, health data, or other identifying details about the people you work with. 
+
+                    Always obtain consent from community members before processing their words, recordings, or responses using an AI tool. 
+
+                    Tell participants clearly how their data will be used and by whom. </p>
+            </div>
+            <div class="is-my-data-private-right">
+                <p class="card-heading">Is my data private?</p><br>
+                <p class="paragraph-section">When you upload a document or paste text into an AI tool, that information is sent to the company that runs the tool. Different tools have different privacy policies; some may use your inputs to improve their models; others offer confidential modes for professional or organisational use.</p>
+            </div>
+            
+            </div>
+        </section>
+        <script src="script.js"></script>
+        <footer>
+            <section class="row one-column">
+                <div class="footer-section"></div>
+            </section>
+        </footer>
+        
 
 
         <!-- </div>  -->
