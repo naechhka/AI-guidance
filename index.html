@@ -14,22 +14,26 @@
 
 
 <body>
+    <header style="background-color: #E8E3F0; border-radius: 0px 0px 25px 0px;">
+        <button class="burger-menu" id="burger-menu">
 
-    
-        <header>
-
-            <button class="burger-menu" id="burger-menu">
-                <span></span>
-                <span></span>
-            </button>
+            <span></span>
+            <span></span>
+            
+        </button>
+            <!-- <section class="nav-section">
+                <div class="nav-itself"></div>
+            </section> -->
 
             <nav class="nav" id="nav">
+
+                
                 <a href="index.html" class="logo"><img src="imgs/project-name.svg"></a>
                 <a class="page-link" href="aboutus.html" target="_blank">ABOUT US</a><!-- add link to about us page -->
                 <a class="page-link" href="how-can-you-gather-information.html" target="_blank">HOW CAN YOU GATHER INFORMATION?</a>
                 <a class="page-link" href="how-can-you-use-ai.html" target="_blank">HOW CAN YOU USE AI?</a>
-                <a class="page-link" href="how-can-you-use-ai.html" target="_blank">ETHICS & REPORTING</a>
-                <a class="page-link" href="how-can-you-use-ai.html" target="_blank">TROUBLESHOOTING</a>
+                <a class="page-link" href="ethics-reporting.html" target="_blank">ETHICS & REPORTING</a>
+                <a class="page-link" href="troubleshooting.html" target="_blank">TROUBLESHOOTING</a>
 
 
 
@@ -43,9 +47,12 @@
                     </div>
                 </div> -->
 
-                <a></a>
             </nav>
+            <section class="phone-logo" style="z-index: 2000;">
+            <img src="imgs/project-name.svg">
+            </section>
             <!-- <hr> -->
+             
         </header>
 
         <div class="intro-img">
@@ -95,17 +102,23 @@
                 <p class="card-heading">What can you do with <span style="color: #6E47E3;">AI</span>?</p>
                 <ul class="list">
                     <li>Analyse themes and patterns from community conversations or survey responses</li>
-                    <li>example</li>
-                    <li>example</li>
+                    <li>Summarise long documents, reports, or meeting notes </li>
+                    <li>Extract and explain information from PDFs, images, and spreadsheets</li>
+                    <li>Generate first drafts of impact reports, briefings, or communications</li>
+                    <li>Create charts and visualisations from data</li>
+                    <li>Search and make sense of publicly available information</li>
                 </ul>
             </div>
             <div class="what-ai-cannot-do-section">
-                <p class="card-heading-right">What can't you do with <span style="color:#6E47E3">AI</span>?</p><br>
-                <p class="paragraph-section-right">There are also things AI is not able to do:</p><br>
-                <ul class="list-right">
+                <p class="card-heading">What can't you do with <span style="color:#6E47E3">AI</span>?</p>
+                <!-- <p class="card-heading">There are also things AI is not able to do:</p><br> -->
+                <ul class="list">
                     <li>Understand people the way you do — it works with words, not lived experience</li>
-                    <li>example</li>
-                    <li>example</li>
+                    <li>Tell you whether something is true — always verify important claims yourself </li>
+                    <li>Make ethical decisions — those judgements are always yours</li>
+                    <li>Listen to audio directly — recordings must be transcribed into text first</li>
+                    <li>Remember previous conversations — each session starts from scratch </li>
+                    <li>Guarantee confidentiality — always check a tool's data policy before uploading sensitive material </li>
                 </ul>
             </div>
         </section>
@@ -129,6 +142,7 @@
             </div>
         </section>
 
+
         <!-- <section class="row two-columns">
             <div class="is-my-data-private-left">
                 <p class="paragraph-section">As a general rule:<br><br>
@@ -147,13 +161,18 @@
             
             </div>
         </section> -->
-        <script src="script.js"></script>
+        <script src="index.js"></script>
+
+
         <footer>
-            <section class="row one-column">
-                <div class="footer-section"></div>
+            <section class="footer-section2">
+                <div class="footer-block">
+                    <p style="font-size: 13px; font-family: Inter; padding-top: 5px; ">This website is provided for educational purposes only.</p>
+                    <p style="font-size: 13px; font-family: Inter; padding-bottom: 10px; ">Contact: </p>
+                    <p style="font-size: 13px; font-family: Inter; ">© 2026 AI for Community Organisations</p><br>
+                </div>
             </section>
-        </footer>
-        
+        </footer>  
 
 
         <!-- </div>  -->

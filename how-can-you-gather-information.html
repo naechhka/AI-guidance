@@ -11,12 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header style="background-color: #E8E3F0; border-radius: 0px 0px 25px 0px;">
+        <button class="burger-menu" id="burger-menu">
+
+            <span></span>
+            <span></span>
+            
+        </button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="logo"><img src="imgs/project-name.svg"></a>
+                <a class="page-link" href="aboutus.html" target="_blank">ABOUT US</a><!-- add link to about us page -->
+                <a class="page-link" href="how-can-you-gather-information.html" style="background-color: #211546; border-radius: 25px; color: #E8E3F0;">HOW CAN YOU GATHER INFORMATION?</a>
+                <a class="page-link" href="how-can-you-use-ai.html" target="_blank">HOW CAN YOU USE AI?</a>
+                <a class="page-link" href="ethics-reporting.html" target="_blank">ETHICS & REPORTING</a>
+                <a class="page-link" href="troubleshooting.html" target="_blank">TROUBLESHOOTING</a>
+
+            </nav>
+            <section class="phone-logo" style="z-index: 2000;">
+            <img src="imgs/project-name.svg">
+            </section>
+        </header>
     <main>
 
         <section class="intro-to-gathering-info-section">
             <div class="intro-to-gathering-info">
-                <p class="sub-headings">Introduction</p>
+                <p class="sub-headings">Introduction to gathering information</p>
                 <p class="paragraph-section">Before you use an AI tool to analyse anything, you need to have gathered the right material. This page covers what kinds of information you can feed into AI, and how to do this responsibly — especially when working with communities.</p>
             </div>
         </section>
@@ -48,7 +67,7 @@
             </div>
         </section>
 
-        <section class="row two-columns">
+        <!-- <section class="row two-columns">
             <div class="feed-into-ai-menu">
                 <div class="feed-into-ai-menu-section">
                     <div class="docs-text feed-into-ai-menu-part"><p class="feed-headings">Documents & text</p></div>
@@ -58,6 +77,19 @@
                 </div>
             </div>
             <div class="feed-into-ai-content">
+                <div class="content-visual"></div>
+                <div class="content-text"></div>
+            </div>
+        </section> -->
+
+        <section class="feed-into-ai-section">
+            <div class="test" style="border-radius: 25px;">
+                <div class="docs-text feed-into-ai-menu-part"><p class="feed-headings">Documents & text</p></div>
+                <div class="audio-voice feed-into-ai-menu-part"><p class="feed-headings">Audio & voice recordings</p></div>
+                <div class="images-visual feed-into-ai-menu-part"><p class="feed-headings">Images & visual documents</p></div>
+                <div class="spewasheets-data feed-into-ai-menu-part"><p class="feed-headings">Spreadsheets & data files</p></div>
+            </div>
+            <div class="test" style="border-radius: 25px; padding: 20px;">
                 <div class="content-visual"></div>
                 <div class="content-text"></div>
             </div>
@@ -268,11 +300,14 @@
             
     </main>
     <script src="script.js"></script>
+    <script src="index.js"></script>
+
     <footer>
         <section class="footer-section2">
             <div class="footer-block">
-                <p class="card-heading">footer text</p><br>
-                </p><br>
+                <p style="font-size: 13px; font-family: Inter; padding-top: 5px; ">This website is provided for educational purposes only.</p>
+                <p style="font-size: 13px; font-family: Inter; padding-bottom: 10px; ">Contact: </p>
+                <p style="font-size: 13px; font-family: Inter; ">© 2026 AI for Community Organisations</p><br>
             </div>
         </section>
     </footer>    
